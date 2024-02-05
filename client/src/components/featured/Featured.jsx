@@ -17,7 +17,7 @@ const Featured = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8800/api/dashboard/average"
+          "https://dashboard-api-jade.vercel.app/api/dashboard/average"
         );
 
         const {
