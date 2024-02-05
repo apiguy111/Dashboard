@@ -17,7 +17,13 @@ const connect = async () => {
 };
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://dashboard-client-livid.vercel.app/"],
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
 
 app.use("/api/dashboard", dashboardRoute);
 
