@@ -1,0 +1,59 @@
+.home {
+  display: flex;
+}
+
+.homeContainer {
+  flex: 6;
+}
+
+.homeContainer .widgets,
+.homeContainer .charts {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.homeContainer .charts {
+  padding: 5px 20px;
+}
+
+.homeContainer .listContainer {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  margin: 20px;
+}
+
+.homeContainer .listContainer .listTitle {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContainer .listContainer .listTitle .listHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeContainer .listContainer .listTitle .listHead .search {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid lightgray;
+  padding: 3px;
+  margin-bottom: 30px;
+  flex-direction: row;
+}
+
+.homeContainer .listContainer .listTitle .listHead .search input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.homeContainer .listContainer .listTitle .listHead .search input::placeholder {
+  font-size: 12px;
+}
