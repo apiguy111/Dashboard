@@ -20,7 +20,7 @@ const List = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8800/api/dashboard/visualization"
+          "https://dashboard-api-jade.vercel.app/api/dashboard/visualization"
         );
 
         const { countryDistribution } = response.data;
