@@ -17,7 +17,7 @@ const Chart = ({ aspect, title }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://dashboard-api-iota.vercel.app/api/dashboard/visualization"
+          "https://dashboard-3074.onrender.com/api/dashboard/visualization"
         );
 
         const averageIntensityData = response.data.averageIntensityOverTime;
