@@ -27,7 +27,7 @@ const Home = () => {
       sector: false,
       pestle: false,
       country: false,
-      source: false,
+      topic: false,
       region: false,
       [checkbox]: true,
     }));
