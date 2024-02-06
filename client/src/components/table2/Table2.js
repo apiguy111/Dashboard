@@ -17,7 +17,7 @@ const List = ({ query, heading }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiUrl = `https://dashboard-api-nu.vercel.app/api/dashboard/filter?${heading}=${query}`;
+        const apiUrl = `https://dashboard-api-kohl.vercel.app/api/dashboard/filter?${heading}=${query}`;
         console.log(apiUrl); // Log the constructed API URL
 
         const response = await axios.get(apiUrl);
