@@ -17,7 +17,7 @@ const Chart = ({ aspect, title }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://dashboard-api-nu.vercel.app/api/dashboard/visualization"
+          "https://dashboard-api-kohl.vercel.app/api/dashboard/visualization"
         );
 
         const averageIntensityData = response.data.averageIntensityOverTime;
