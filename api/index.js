@@ -19,7 +19,7 @@ const connect = async () => {
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://dashboard-client-livid.vercel.app/"],
+    origin: ["https://dashboard-client-kappa.vercel.app/"],
     methods: ["GET", "POST"],
     credentials: true,
   })
