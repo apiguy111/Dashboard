@@ -2,7 +2,7 @@ const express = require("express");
 const EnergyModel = require("./Model");
 const router = express.Router();
 
-router.post("/energy", async (req, res) => {
+router.post("api/dashboard/energy", async (req, res) => {
   try {
     const newData = new EnergyModel(req.body);
     const savedData = await newData.save();
@@ -12,7 +12,7 @@ router.post("/energy", async (req, res) => {
   }
 });
 
-router.get("/insights", async (req, res) => {
+router.get("api/dashboard/insights", async (req, res) => {
   try {
     const insights = await EnergyModel.find();
     res.json(insights);
@@ -21,7 +21,7 @@ router.get("/insights", async (req, res) => {
   }
 });
 
-router.get("/filter", async (req, res) => {
+router.get("api/dashboard/filter", async (req, res) => {
   try {
     const { end_year, topic, sector, region, pestle, source, country } =
       req.query;
@@ -43,7 +43,7 @@ router.get("/filter", async (req, res) => {
   }
 });
 
-router.get("/visualization", async (req, res) => {
+router.get("api/dashboard/visualization", async (req, res) => {
   try {
     const averageIntensityOverTime = await EnergyModel.aggregate([
       {
@@ -119,7 +119,7 @@ router.get("/visualization", async (req, res) => {
   }
 });
 
-router.get("/average", async (req, res) => {
+router.get("api/dashboard/average", async (req, res) => {
   try {
     const intensityStats = await EnergyModel.aggregate([
       {
