@@ -7,7 +7,7 @@
     }
   ],
   "routes": [
-    { "src": "/api/dashboard/(.*)", "dest": "/api/dashboard" },
-    { "src": "/(.*)", "dest": "/index.js" }
+    { "src": "/(.*)", "dest": "/" },
+   
   ]
 }
