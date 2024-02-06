@@ -20,7 +20,7 @@ const List = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://dashboard-api-kohl.vercel.app/api/dashboard/visualization"
+          "https://dashboard-api-iota.vercel.app/api/dashboard/visualization"
         );
 
         const { countryDistribution } = response.data;
