@@ -27,7 +27,10 @@ app.use(
 
 app.use("/api/dashboard", dashboardRoute);
 
-app.listen(8800, () => {
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => {
   connect();
-  console.log("backend is running");
+  console.log(`Backend is running on port ${port}`);
 });
+
