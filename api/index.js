@@ -24,7 +24,9 @@ app.use(
     credentials: true,
   })
 );
-
+app.get('/', (req, res) => {
+  res.json('Hello World!');
+});
 app.use("/api/dashboard", dashboardRoute);
 
 const port = process.env.PORT || 8000;
