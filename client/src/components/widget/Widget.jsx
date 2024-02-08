@@ -19,7 +19,7 @@ const Widget = ({ type }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "/api/dashboard/visualization"
+          `https://dashboard-3074.onrender.com/api/dashboard/visualization`
         );
 
         switch (type) {
