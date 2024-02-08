@@ -17,7 +17,7 @@ const Chart = ({ aspect, title }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "/dashboard/visualization"
+          "/api/dashboard/visualization"
         );
 
         const averageIntensityData = response.data.averageIntensityOverTime;
