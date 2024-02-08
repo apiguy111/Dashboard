@@ -19,7 +19,7 @@ const connect = async () => {
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://65c25e7f96121e0c12eb7e24--lucent-squirrel-e2db1c.netlify.app/"],
+    origin: ["https://dashboard-client-seven.vercel.app/"],
     methods: ["GET", "POST"],
     credentials: true,
   })
