@@ -20,7 +20,7 @@ const List = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://dashboard-3074.onrender.com/api/dashboard/visualization`
+          `/api/dashboard/visualization`
         );
 
         const { countryDistribution } = response.data;
