@@ -17,8 +17,8 @@ const List = ({ query, heading }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiUrl = `https://dashboard-3074.onrender.com/api/dashboard/filter?${heading}=${query}`;
-        console.log(apiUrl); // Log the constructed API URL
+        const apiUrl = `/api/dashboard/filter?${heading}=${query}`;
+        console.log(apiUrl); 
 
         const response = await axios.get(apiUrl);
 
