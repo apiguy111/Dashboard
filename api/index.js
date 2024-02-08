@@ -17,7 +17,14 @@ const connect = async () => {
 };
 
 app.use(express.json());
-app.use(cors({ origin: '*' }));
+app.use(
+  cors({
+    origin: "Front-end connection string",
+    methods: "GET,POST",
+    credentials: true,
+  })
+);
+
 app.get("/", (req, res) => {
     res.json("Hello from root!");
 });
