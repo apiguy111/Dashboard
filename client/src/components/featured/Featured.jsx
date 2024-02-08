@@ -17,7 +17,7 @@ const Featured = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "/api/dashboard/average"
+          "https://dashboard-3074.onrender.com/api/dashboard/average"
         );
 
         const {
