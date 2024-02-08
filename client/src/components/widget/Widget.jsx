@@ -19,7 +19,7 @@ const Widget = ({ type }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "/dashboard/visualization"
+          "/api/dashboard/visualization"
         );
 
         switch (type) {
