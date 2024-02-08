@@ -17,7 +17,7 @@ const List = ({ query, heading }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiUrl = `/dashboard/filter?${heading}=${query}`;
+        const apiUrl = `/api/dashboard/filter?${heading}=${query}`;
         console.log(apiUrl); // Log the constructed API URL
 
         const response = await axios.get(apiUrl);
